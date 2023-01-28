@@ -45,7 +45,7 @@
   background-image: url("../imgs/about.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px;
+  padding: 60px 0;
 }
 .about .text-about {
   max-width: 450px;
