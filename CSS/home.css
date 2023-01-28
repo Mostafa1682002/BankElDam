@@ -1,0 +1,578 @@
+/* ======================Home Page================== */
+/* Start Home  */
+.home {
+  min-height: calc(100vh - 147px);
+  background-image: url("../imgs/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  position: relative;
+}
+.home .container .home-text {
+  max-width: 400px;
+}
+.home .container .home-text h1 {
+  color: var(--sec-color);
+  font-size: 27px;
+}
+.home .container .home-text p {
+  color: var(--main-color);
+  font-size: 25px;
+  margin: 10px 0 30px;
+}
+
+.home .container .bullts {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+.home .container .bullts span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+}
+.home .container .bullts span.active {
+  opacity: 1;
+}
+/* End Home */
+/* Start About */
+.about {
+  background-image: url("../imgs/about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px;
+}
+.about .text-about {
+  max-width: 450px;
+  text-align: center;
+  font-size: 25px;
+  color: var(--main-color);
+}
+/* End About */
+/* Start Maqal */
+.maqal {
+  padding: 20px 0;
+  background-color: #fbfbfb;
+}
+.maqal .container .content-maqal {
+  padding: 50px 0;
+}
+.maqal .container .box-maqal {
+  background-color: #fff;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.maqal .container .box-maqal .heart {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.maqal .container .box-maqal .heart:hover {
+  background-color: red;
+}
+.maqal .container .box-maqal img {
+  width: 100%;
+}
+.maqal .container .box-maqal .text {
+  padding: 0 10px 10px;
+}
+.maqal .container .box-maqal .text h3 {
+  font-size: 20px;
+  color: var(--sec-color);
+}
+.maqal .container .box-maqal .text p {
+  font-size: 18px;
+  color: var(--main-color);
+  margin: 7px 0px;
+}
+.maqal .container .box-maqal a {
+  margin: auto;
+  display: block;
+  width: fit-content;
+}
+/* End Maqal */
+/* Start talabate */
+.talabate {
+  padding: 20px 0;
+  background-color: #fbfbfb;
+}
+.talabate .form {
+  padding: 30px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.talabate .form .box {
+  flex: 1;
+}
+.talabate .form .box select {
+  width: 100%;
+  border-radius: 50px;
+  background-color: #fff;
+  color: #212529;
+  appearance: none;
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+.talabate .form .sear {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: #fff;
+  outline: none;
+  border: none;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.talabate .container .all-items {
+  padding: 30px 0;
+}
+.talabate .container .all-items .item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0 100px 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.talabate .container .all-items .item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.talabate .container .all-items .item .status {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.talabate .container .all-items .item .status .cicle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: var(--main-color);
+}
+.talabate .container .all-items .item .status .dis p {
+  font-size: 19px;
+}
+.talabate .container .all-items .item .status .dis p span {
+  padding: 5px;
+}
+.talabate .container .mybtn {
+  margin: auto;
+  display: block;
+  width: fit-content;
+}
+.talabate .container .numbers {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px;
+}
+.talabate .container .numbers li a {
+  padding: 5px 15px;
+  color: var(--main-color);
+  background-color: #fff;
+  font-size: 20px;
+  transition: var(--main-transition);
+}
+.talabate .container .numbers li a:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+.talabate .container .numbers li a i {
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .talabate .form {
+    flex-direction: column;
+  }
+  .talabate .form .box {
+    width: 100%;
+  }
+  .talabate .container .all-items .item {
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 20px;
+  }
+  .talabate .container .all-items .item .status {
+    flex-direction: column;
+  }
+  .talabate .container .numbers li a {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  .talabate .container .numbers li a i {
+    font-size: 16px;
+  }
+}
+/* End talabate */
+/* Start contact */
+.contact {
+  background-image: url("../imgs/call.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+}
+.contact .container .contact-text {
+  max-width: 450px;
+  text-align: center;
+}
+.contact .container .contact-text h2 {
+  color: var(--sec-color);
+  padding: 10px 0;
+  font-size: 25px;
+  margin: 10px auto;
+  font-weight: 600;
+  width: fit-content;
+  border-bottom: 2px solid var(--sec-color);
+}
+.contact .container .contact-text p {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.contact .container .contact-text button {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  padding: 20px 80px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: #3ab54a;
+}
+.contact .container .contact-text a {
+  display: block;
+  width: 100px;
+  color: #fff;
+}
+.contact .container .contact-text button img {
+  width: 60px;
+  position: absolute;
+  left: -15px;
+  top: 0;
+}
+/* End contact */
+/* Start Bank   */
+.bank {
+  background-image: url("../imgs/BG-phone.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+}
+.bank .bank-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.bank .bank-content .bank-box {
+  width: 45%;
+}
+.bank .bank-content .bank-box h2 {
+  font-size: 30px;
+  padding: 0 0 30px 0;
+  color: var(--main-color);
+}
+.bank .bank-content .bank-box p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+.bank .bank-content .bank-box h3 {
+  font-size: 25px;
+  color: var(--main-color);
+  text-align: center;
+  padding: 10px 0;
+}
+.bank .bank-content .bank-box .apps {
+  text-align: center;
+}
+.bank .bank-content .bank-box > img {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .bank .bank-content {
+    flex-direction: column;
+  }
+  .bank .bank-content .bank-box {
+    width: 100%;
+  }
+}
+/* End Bank   */
+
+/* ======================Contact,Login,Singup Page================== */
+/* Start ContactPage */
+.contactpage {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+.contactpage .contactpage-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.contactpage .contactpage-content .card {
+  width: 50%;
+  background-color: #fff;
+}
+.contactpage .contactpage-content .card .head-card {
+  text-align: center;
+  padding: 7px 10px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+}
+.contactpage .contactpage-content .card .img-card {
+  text-align: center;
+  padding: 30px 0;
+}
+.contactpage .contactpage-content .card .mycontact {
+  padding: 20px;
+  font-size: 20px;
+  color: var(--main-color);
+}
+.contactpage .contactpage-content .card .mysocial h3 {
+  color: var(--sec-color);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.contactpage .contactpage-content .card .mysocial {
+  padding: 50px 20px 0;
+}
+.contactpage .contactpage-content .card .mysocial ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.contactpage .contactpage-content .card .mysocial ul li {
+  width: 60px;
+}
+
+.contactpage .contactpage-content .card .card-form {
+  padding: 20px 10px 0;
+}
+.contactpage .contactpage-content .card .card-form input,
+.contactpage .contactpage-content .card .card-form textarea {
+  width: 100%;
+  border: 2px solid #f2f2f2;
+  padding: 12px 20px;
+  outline: none;
+  font-size: 18px;
+  resize: none;
+  margin-bottom: 15px;
+  transition: var(--main-transition);
+}
+.contactpage .contactpage-content .card .card-form input:focus,
+.contactpage .contactpage-content .card .card-form textarea:focus {
+  box-shadow: 2px 0px 10px rgb(0, 140, 255);
+}
+.contactpage .contactpage-content .card .card-form textarea {
+  height: 150px;
+}
+
+@media (max-width: 991px) {
+  .contactpage .contactpage-content {
+    flex-direction: column;
+  }
+  .contactpage .contactpage-content .card {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .contactpage .contactpage-content .card .mysocial ul li {
+    width: 40px;
+  }
+}
+
+/* Start SignUp */
+.signup,
+.login {
+  background-color: #fbfbfb;
+  padding-bottom: 40px;
+}
+.signup .signup-content,
+.login .login-content {
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #eee;
+}
+.login .login-content .img-login {
+  text-align: center;
+  margin: 20px auto 30px;
+}
+.signup .signup-content input,
+.login .login-content input,
+.signup .signup-content select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #fbfbfb;
+  outline: none;
+  border: 2px solid #eee;
+  transition: var(--main-transition);
+}
+
+.signup .signup-content input:focus,
+.login .login-content input:focus,
+.signup .signup-content select:focus {
+  box-shadow: 2px 0px 10px rgb(0, 140, 255);
+}
+.signup .signup-content .send {
+  font-size: 20px;
+  padding: 10px 60px;
+  transition: var(--main-transition);
+  cursor: pointer;
+  outline: none !important;
+  border: none;
+  display: block;
+  margin: auto;
+  background-color: green;
+  color: #fff;
+}
+
+.login .login-content .remember {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+.login .login-content .remember .rem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.login .login-content .remember .rem > input {
+  margin: 0 !important;
+}
+.login .login-content .remember a {
+  color: var(--main-color);
+}
+.login .login-content .btns {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.login .login-content .btns a {
+  width: 50%;
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+.login .login-content .btns a.log {
+  background-color: #3ab54a;
+}
+.login .login-content .btns a.create {
+  background-color: var(--main-color);
+}
+@media (max-width: 768px) {
+  .login .login-content .btns a {
+    padding: 7px;
+    font-size: 16px;
+  }
+}
+
+/* ======================Maqal Page================== */
+.MaqalPage {
+  background-color: #fbfbfb;
+  padding: 40px 10px;
+}
+.MaqalPage .container .img {
+  text-align: center;
+  margin: 20px 0;
+}
+.MaqalPage .container .head-maqals {
+  background-color: var(--main-color);
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.MaqalPage .container .head-maqals h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.MaqalPage .container .head-maqals .heart {
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.MaqalPage .container .head-maqals .heart:hover {
+  background-color: red;
+}
+
+.MaqalPage .container .MaqalPage-text {
+  padding: 30px 20px 10px;
+  background-color: #fff;
+  border: 2px solid #eee;
+}
+.MaqalPage .container .MaqalPage-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ======================About Page================== */
+/* Start AboutUS */
+.aboutus {
+  background-color: #fbfbfb;
+  padding: 40px 0;
+}
+.aboutus .container .aboutus-content {
+  background-color: #fff;
+  border: 2px solid #f2f2f2;
+  padding: 40px 25px 20px;
+}
+.aboutus .container .aboutus-content div {
+  margin: 20px auto;
+  text-align: center;
+}
+.aboutus .container .aboutus-content p {
+  font-size: 19px;
+  margin-bottom: 30px;
+}
+/* End AboutUS */
